@@ -1,0 +1,91 @@
+@import url(https://http://127.0.0.1:5500/valentines.html/register)
+{margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'poppping', sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgb(220, 86, 86);
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background-image: url(flower.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 25px;
+    border-radius: 5px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    color:white;
+}
+.container .title::before{
+    content: '';
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background: red
+}
+.container form .user-details{
+display: flex;
+flex-wrap:wrap;
+justify-content: space-between;
+color: white;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+color: white:;
+    width: calc(100% / 2 - 20pxs)
+}
+.user-details .input-box. .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: white;
+}
+.user-details .input-box input{
+    height: 45px;
+    width:100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid red;
+    padding-left: 15px;
+font-size: 16px;
+
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid,{
+border-color: red;
+}
+form .button{
+     height: 45px;
+     margin: 45px 0;
+}
+form .button input{ 
+height:  100%;
+width: 100;
+outline: none;
+border: none;
+background-color: red;
+color:white;
+font-size: 18px;
+font-weight: 500;
+border-radius: 5px;
+letter-spacing: 1px;
+}
+form .button input:hover{
+    background-color: red;
+}
+@media (max-width:584px){
+    max-width:100%;
+}
+    
+}
